@@ -5,7 +5,7 @@ public void setup()
 {
   maze = new Maze();
   mouse = new Mouse();
-  size(500, 500);
+  size(500, 500, P2D);
   noStroke();
 }
 
