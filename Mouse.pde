@@ -23,6 +23,7 @@ class Mouse
   
   private void show()
   {
+    fill(255);
     rectMode(CENTER);
     rect(x, y, r, r);
   }

@@ -6,6 +6,7 @@ public void setup()
   maze = new Maze();
   mouse = new Mouse();
   size(500, 500);
+  noStroke();
 }
 
 public void draw()
