@@ -31,6 +31,7 @@ class Mouse
   private void move()
   {
     y += ySpeed;
+    x += xSpeed;
   }
   
   private void edges()

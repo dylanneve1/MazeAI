@@ -7,6 +7,7 @@ class Maze
   {
     border();
     borderCollide();
+    // horizontalBars();
   }
 
   private void border()
@@ -24,11 +25,22 @@ class Maze
     rect(470, 20, 20, 390);
   }
 
+  private void horizontalBars()
+  {
+    rectMode(CENTER);
+    rect(250, 350, 380, 20);
+    
+  }
+
   private void borderCollide()
   {
     if (mouse.topEdge <= 30)
     {
       mouse.ySpeed *= -1;
+    }
+    if (mouse.topEdge <= 360)
+    {
+      mouse.xSpeed *= -1;
     }
   }
 }
