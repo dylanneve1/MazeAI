@@ -2,12 +2,13 @@ class Maze
 {
 
   private float r = 10;
-  
+
   public void caller()
   {
     border();
+    borderCollide();
   }
-  
+
   private void border()
   {
     fill(100);
@@ -21,5 +22,13 @@ class Maze
     rectMode(CORNER);
     rect(10, 20, 20, 390);
     rect(470, 20, 20, 390);
+  }
+
+  private void borderCollide()
+  {
+    if (mouse.topEdge <= 30)
+    {
+      mouse.ySpeed *= -1;
+    }
   }
 }

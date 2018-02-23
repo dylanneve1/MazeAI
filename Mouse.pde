@@ -5,7 +5,7 @@ class Mouse
   private float y = 450;
   
   private float xSpeed;
-  private float ySpeed;
+  private float ySpeed = -2;
   
   private float leftEdge;
   private float rightEdge;
@@ -30,7 +30,7 @@ class Mouse
   
   private void move()
   {
-    
+    y += ySpeed;
   }
   
   private void edges()
